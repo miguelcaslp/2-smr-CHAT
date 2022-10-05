@@ -2,9 +2,11 @@ package proytecto.chat;
 
 import java.io.IOException;
 
+import Dao.UsersDao;
 import controller.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import model.User;
 
 public class PrimaryController {
 	
@@ -19,6 +21,10 @@ public class PrimaryController {
     private void validNick() {
     	String name= nick.getText();
     	boolean valid = Controller.validNick(name);
+    	if(valid) {
+    		UsersDao us= new UsersDao();
+    		us.addUser(new User("name"));
+    	}
     	
     }
     
