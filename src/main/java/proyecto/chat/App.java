@@ -1,4 +1,4 @@
-package proytecto.chat;
+package proyecto.chat;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package proytecto.chat;
+package proyecto.chat;
 
 import java.io.IOException;
 import javafx.fxml.FXML;

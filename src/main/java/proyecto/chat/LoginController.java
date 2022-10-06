@@ -1,4 +1,4 @@
-package proytecto.chat;
+package proyecto.chat;
 
 import java.io.IOException;
 
@@ -22,9 +22,11 @@ public class LoginController {
     	String name= nick.getText();
     	boolean valid = Controller.validNick(name);
     	if(valid) {
-    		UserDao us=new UsersDao();
+    		UsersDao us=new UsersDao();
     		us.addUser(new User(name));
     	}
+
+    	
     }
     
     

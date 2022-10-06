@@ -2,6 +2,12 @@ package model;
 
 public class User {
 	private String id;
+	
+	
+
+	public User() {
+		this("");
+	}
 
 	public User(String id) {
 		this.id = id;
@@ -24,9 +30,9 @@ public class User {
 	public boolean equals(Object obj) {
 		User aux=(User)obj;
 		if(this.id.equals(aux.id)) {
-			
+			return true;
 		}
-		return super.equals(obj);
+		return false;
 	}
 	
 }
