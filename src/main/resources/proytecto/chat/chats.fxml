@@ -14,7 +14,7 @@
          <children>
             <VBox prefHeight="100.0" prefWidth="304.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="115.0" prefWidth="384.0" text="Add Group">
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="311.0" text="Add Chat">
                      <font>
                         <Font size="40.0" />
                      </font>
@@ -23,7 +23,7 @@
             </VBox>
             <VBox prefHeight="100.0" prefWidth="304.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="105.0" prefWidth="307.0" text="Logout">
+                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="298.0" text="Logout">
                      <font>
                         <Font size="45.0" />
                      </font>
