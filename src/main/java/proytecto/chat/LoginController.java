@@ -2,24 +2,29 @@ package proytecto.chat;
 
 import java.io.IOException;
 
+import Dao.UsersDao;
 import controller.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import model.User;
 
-public class PrimaryController {
+public class LoginController {
 	
 	private TextField nick;
 
     @FXML
     private void switchToNext() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("chats");
     }
     
     @FXML
     private void validNick() {
     	String name= nick.getText();
     	boolean valid = Controller.validNick(name);
-    	
+    	if(valid) {
+    		UserDao us=new UsersDao();
+    		us.addUser(new User(name));
+    	}
     }
     
     
