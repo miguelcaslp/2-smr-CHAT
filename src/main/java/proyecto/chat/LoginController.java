@@ -8,13 +8,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import model.User;
 
-public class PrimaryController {
+public class LoginController {
 	
 	private TextField nick;
 
     @FXML
     private void switchToNext() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("chats");
     }
     
     @FXML
@@ -22,9 +22,10 @@ public class PrimaryController {
     	String name= nick.getText();
     	boolean valid = Controller.validNick(name);
     	if(valid) {
-    		UsersDao us= new UsersDao();
-    		us.addUser(new User("name"));
+    		UsersDao us=new UsersDao();
+    		us.addUser(new User(name));
     	}
+
     	
     }
     
