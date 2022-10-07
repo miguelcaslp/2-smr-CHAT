@@ -24,6 +24,28 @@ public class TextToSendDao implements Serializable {
 	private final String URL="C:\\Users\\Miguel\\Documents\\add\\chat\\Chats\\";
 	
 	
+	
+	public HashSet<TextToSend> orderMensagesbydate(String url) {
+		return chats;
+	}
+	
+	
+	public void addTexttoSend (TextToSend c,String chat) {
+		chat= URL+chat+".xml";
+		this.chats= new HashSet<TextToSend>();
+		File file = new File(chat);
+		if(file.exists()) {
+			this.chats=loadFile(chat);
+			this.chats.add(c);
+			saveFile(chat, chats);
+		}else {
+			this.chats.add(c);
+			saveFile(chat, chats);
+		}
+		
+	}
+	
+	
 	public void saveFile(String url, HashSet<TextToSend> chats) {
 		this.chats=chats;
 		JAXBContext contexto;

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Usuarios>
     <users>
-        <id>mario</id>
+        <id>bb</id>
+    </users>
+    <users>
+        <id>aa</id>
+    </users>
+    <users>
+        <id>adri</id>
     </users>
     <URL>C:\Users\Miguel\Documents\add\chat\Users\usuarios.xml</URL>
 </Usuarios>

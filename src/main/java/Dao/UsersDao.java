@@ -30,23 +30,25 @@ public class UsersDao implements Serializable {
 	public boolean addUser(User a) {
 		boolean valid=true;
 		this.users = new HashSet<User>();
-		if(users.isEmpty()) {
-			try {
-				this.users = loadFile(URL);
-			} catch (Exception e) {
-				e.getMessage();
+		File file = new File(URL);
+		if(file.exists()) {
+			this.users = loadFile(URL);	
+		}else {
+			users.add(a);
+			saveFile(URL,users);
+		}
+			
+		
+		
+		if(!users.isEmpty()) {
+			for(User s: users) {
+				if(s.equals(a)) {
+					//ya hay un usuario con ese nombre y no se guarda
+					valid=false;
+				}
 			}
 		}
 		
-		
-		for(User s: users) {
-			if(s.equals(a)) {
-				//ya hay un usuario con ese nombre y no se guarda
-				valid=false;
-			}else {
-				
-			}
-		}
 		
 		if(valid==true) {
 			users.add(a);
