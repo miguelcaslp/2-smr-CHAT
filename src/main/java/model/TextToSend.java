@@ -1,6 +1,9 @@
 package model;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -18,13 +21,14 @@ public class TextToSend implements Serializable {
 	
 	
 	public TextToSend() {
-		this(null,"","");
+		this(null,"");
 	}
 
-	public TextToSend(User user, String text, String time) {
+	public TextToSend(User user, String text) {
 		this.user = user;
 		this.text = text;
-		this.time = time;
+		DateTimeFormatter dtf4 = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");
+		this.time=dtf4.format(LocalDateTime.now());
 	}
 	
 	public User getUser() {
