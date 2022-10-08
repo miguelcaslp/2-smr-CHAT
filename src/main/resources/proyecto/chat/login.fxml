@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.chat.LoginController">
    <children>
       <Label alignment="CENTER" layoutX="185.0" layoutY="182.0" prefHeight="23.0" prefWidth="270.0" text="Chatterin">
          <font>
@@ -24,9 +24,9 @@
             <Font size="23.0" />
          </font>
       </Button>
-      <ImageView layoutX="233.0" layoutY="8.0">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="246.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../Downloads/New-DiscussionsIcon.png" />
+            <Image url="@../../images/New-DiscussionsIcon.png" />
          </image>
       </ImageView>
    </children>
