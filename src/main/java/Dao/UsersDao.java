@@ -2,6 +2,7 @@ package Dao;
 
 import java.io.File;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.HashSet;
 
 import javax.xml.bind.JAXBContext;
@@ -58,12 +59,35 @@ public class UsersDao implements Serializable {
 		return valid;
 	}
 	
+	
+	public void rmUsersForTime() {
+		this.users = new HashSet<User>();
+		if(users.isEmpty()) {
+			try {
+				this.users = loadFile(URL);
+			} catch (Exception e) {
+				e.getMessage();
+			}
+		}
+		
+		for(User s: users) {
+			if(LocalDateTime.parse(s.getTime()).isBefore(LocalDateTime.now())) {
+			}else {
+				
+			}
+		}
+		
+		
+	}
+	
+	
+	
 	/**
 	 * Eliminar usuarios 
 	 * @param a Usuario a eliminar
 	 * @return true si se borrado el usuario y false si no se ha podido
 	 */
-	public boolean dirUser(User a) {
+	public boolean removeUser(User a) {
 		boolean valid=false;
 		this.users = new HashSet<User>();
 		if(users.isEmpty()) {
@@ -76,7 +100,6 @@ public class UsersDao implements Serializable {
 		
 		for(User s: users) {
 			if(s.equals(a)) {
-				//ya hay un usuario con ese nombre y no se guarda
 				a=s;
 				valid=true;
 			}else {

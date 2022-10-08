@@ -3,31 +3,24 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.chat.LoginController">
    <children>
       <Label alignment="CENTER" layoutX="185.0" layoutY="182.0" prefHeight="23.0" prefWidth="270.0" text="Chatterin">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <TextField alignment="CENTER" layoutX="195.0" layoutY="257.0" prefHeight="45.0" prefWidth="250.0" promptText="Insert Nick">
+      <TextField id="nick" fx:id="nick" alignment="CENTER" layoutX="195.0" layoutY="257.0" prefHeight="45.0" prefWidth="250.0" promptText="Insert Nick">
          <font>
             <Font name="Calibri" size="25.0" />
          </font></TextField>
-      <Button layoutX="273.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="95.0" text="Login">
+      <Button fx:id="login" layoutX="273.0" layoutY="337.0" mnemonicParsing="false" onAction="#validNick" prefHeight="39.0" prefWidth="95.0" text="Login">
          <font>
             <Font size="23.0" />
          </font>
       </Button>
-      <ImageView layoutX="233.0" layoutY="8.0">
-         <image>
-            <Image url="@../../../../../../../../Downloads/New-DiscussionsIcon.png" />
-         </image>
-      </ImageView>
    </children>
 </Pane>

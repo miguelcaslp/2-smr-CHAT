@@ -1,5 +1,7 @@
 package model;
 
+
+
 public class Chat {
 	private String id;
 
@@ -7,6 +9,7 @@ public class Chat {
 	public Chat(String id) {
 		super();
 		this.id = id;
+		
 	}
 
 	public String getId() {
