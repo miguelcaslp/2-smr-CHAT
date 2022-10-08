@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Usuarios>
     <users>
-        <id>bb</id>
+        <id>manuel</id>
+        <time>2022-10-08T16:55:32.104826900</time>
     </users>
     <users>
-        <id>aa</id>
+        <id>carleto</id>
+        <idChat></idChat>
+        <time>2022-10-07T20:00:46.306880400</time>
     </users>
     <users>
-        <id>adri</id>
+        <id>Manuel</id>
+        <idChat></idChat>
+        <time>2022-10-08T16:54:24.018189700</time>
+    </users>
+    <users>
+        <id>manolo</id>
+        <idChat>primero</idChat>
+        <time>2022-10-07T20:01:26.029778400</time>
     </users>
     <URL>C:\Users\Miguel\Documents\add\chat\Users\usuarios.xml</URL>
 </Usuarios>

@@ -2,7 +2,7 @@ package Dao;
 
 import java.io.File;
 import java.io.Serializable;
-import java.util.HashSet;
+import java.util.ArrayList;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -13,26 +13,25 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import model.TextToSend;
-import model.User;
 
-@XmlRootElement(name = "Chats")
+@XmlRootElement(name = "Mensajes")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class TextToSendDao implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private HashSet<TextToSend> chats;
+	private ArrayList<TextToSend> chats;
 	private final String URL="C:\\Users\\Miguel\\Documents\\add\\chat\\Chats\\";
 	
 	
 	
-	public HashSet<TextToSend> orderMensagesbydate(String url) {
+	public ArrayList<TextToSend> orderMensagesbydate(String url) {
 		return chats;
 	}
 	
 	
 	public void addTexttoSend (TextToSend c,String chat) {
 		chat= URL+chat+".xml";
-		this.chats= new HashSet<TextToSend>();
+		this.chats= new ArrayList<TextToSend>();
 		File file = new File(chat);
 		if(file.exists()) {
 			this.chats=loadFile(chat);
@@ -46,7 +45,7 @@ public class TextToSendDao implements Serializable {
 	}
 	
 	
-	public void saveFile(String url, HashSet<TextToSend> chats) {
+	public void saveFile(String url, ArrayList<TextToSend> chats) {
 		this.chats=chats;
 		JAXBContext contexto;
 		try {
@@ -60,7 +59,7 @@ public class TextToSendDao implements Serializable {
 		}
 	}
 	
-	public HashSet<TextToSend> loadFile(String url) {
+	public ArrayList<TextToSend> loadFile(String url) {
 		JAXBContext context;
 		try {
 			context = JAXBContext.newInstance(TextToSendDao.class);

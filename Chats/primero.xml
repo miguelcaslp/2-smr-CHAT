@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Chats>
+<Mensajes>
     <chats>
         <user>
-            <id>Carla</id>
+            <id>Manolo</id>
         </user>
         <text>hola mundo</text>
-        <time>2022/10/06 19:08</time>
+        <time>10:25 10/07</time>
+    </chats>
+    <chats>
+        <user>
+            <id>Abel</id>
+        </user>
+        <text>hola mundo</text>
+        <time>10:25 10/07</time>
     </chats>
     <chats>
         <user>
             <id>Carla</id>
         </user>
         <text>hola mundo</text>
-        <time>2022/10/06 19:11</time>
-    </chats>
-    <chats>
-        <user>
-            <id>abel</id>
-        </user>
-        <text>hola mundo</text>
-        <time>2022/10/06 19:12</time>
+        <time>10:25 10/07</time>
     </chats>
     <URL>C:\Users\Miguel\Documents\add\chat\Chats\</URL>
-</Chats>
+</Mensajes>
