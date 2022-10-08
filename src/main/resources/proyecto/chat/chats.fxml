@@ -7,20 +7,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox layoutX="-2.0" prefHeight="100.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="100.0" prefWidth="304.0">
-               <children>
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="311.0" text="Add Chat">
-                     <font>
-                        <Font size="40.0" />
-                     </font>
-                  </Button>
-               </children>
-            </VBox>
+            <VBox prefHeight="100.0" prefWidth="304.0" />
             <VBox prefHeight="100.0" prefWidth="304.0">
                <children>
                   <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="298.0" text="Logout">
