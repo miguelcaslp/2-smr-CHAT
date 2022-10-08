@@ -18,12 +18,22 @@ public class LoginController {
     }
     
     @FXML
-    private void validNick() {
+    private void validNick() throws IOException {
     	String name= nick.getText();
     	boolean valid = Controller.validNick(name);
     	if(valid) {
     		UsersDao us=new UsersDao();
-    		us.addUser(new User(name));
+    		name= nick.getText().toLowerCase();
+    		if(us.addUser(new User(name))) {
+    			switchToNext();
+    		}else {
+    			Controller.error("Nick ya en uso", "El nick que has puesto"
+    					+ " esta en uso, introduce un nuevo nombre.");
+    		}
+    	}else {
+    		Controller.error("Nick erroneo", "El nick que has eligido"
+					+ " no es valido, introduce un nuevo nombre.");
+
     	}
 
     	
