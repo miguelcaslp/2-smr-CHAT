@@ -15,11 +15,11 @@
             <Font size="33.0" />
          </font>
       </Label>
-      <TextField alignment="CENTER" layoutX="195.0" layoutY="257.0" prefHeight="45.0" prefWidth="250.0" promptText="Insert Nick">
+      <TextField id="nick" fx:id="nick" alignment="CENTER" layoutX="195.0" layoutY="257.0" prefHeight="45.0" prefWidth="250.0" promptText="Insert Nick">
          <font>
             <Font name="Calibri" size="25.0" />
          </font></TextField>
-      <Button layoutX="273.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="95.0" text="Login">
+      <Button fx:id="login" layoutX="273.0" layoutY="337.0" mnemonicParsing="false" onAction="#validNick" prefHeight="39.0" prefWidth="95.0" text="Login">
          <font>
             <Font size="23.0" />
          </font>

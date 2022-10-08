@@ -1,9 +1,20 @@
 package Dao;
 
 import java.io.File;
+import java.util.ArrayList;
 
 
 public class ChatDao {
+	
+	public ArrayList<String> listaChats(){
+		ArrayList<String> chats = new ArrayList<String>();
+		File carpeta = new File("C:\\Users\\Miguel\\Documents\\add\\chat\\Chats");
+		for (final File ficheroEntrada : carpeta.listFiles()) {
+		   chats.add(ficheroEntrada.getName());    
+		}
+		return chats;
+		
+	}
 
 	public boolean createChat(String name) {
 		boolean valid=false;
