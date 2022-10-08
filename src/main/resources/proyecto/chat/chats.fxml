@@ -2,30 +2,44 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.chat.ChatsController">
    <children>
       <HBox layoutX="-2.0" prefHeight="100.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="100.0" prefWidth="304.0" />
-            <VBox prefHeight="100.0" prefWidth="304.0">
-               <children>
-                  <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="298.0" text="Logout">
-                     <font>
-                        <Font size="45.0" />
-                     </font>
-                  </Button>
-               </children>
-            </VBox>
+            <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="270.0" text="Enter in chat">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="271.0" text="Add Chat">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="298.0" text="Logout">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
          </children>
       </HBox>
       <ScrollPane layoutY="101.0" prefHeight="300.0" prefWidth="600.0">
          <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="599.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="598.0">
+               <children>
+                  <TableView prefHeight="300.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn prefWidth="467.19996947050095" text="Name of Group" />
+                      <TableColumn minWidth="0.0" prefWidth="131.99996948242188" text="Users on the chat" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
          </content>
       </ScrollPane>
    </children>
