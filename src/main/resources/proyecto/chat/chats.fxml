@@ -12,17 +12,17 @@
    <children>
       <HBox layoutX="-2.0" prefHeight="100.0" prefWidth="600.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="270.0" text="Enter in chat">
+            <Button mnemonicParsing="false" onAction="#switchToMessages" prefHeight="170.0" prefWidth="270.0" text="Enter in chat">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="271.0" text="Add Chat">
+            <Button mnemonicParsing="false" onAction="#switchToAddChat" prefHeight="100.0" prefWidth="271.0" text="Add Chat">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="298.0" text="Logout">
+            <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="100.0" prefWidth="298.0" text="Logout">
                <font>
                   <Font size="27.0" />
                </font>
@@ -33,10 +33,10 @@
          <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="598.0">
                <children>
-                  <TableView prefHeight="300.0" prefWidth="600.0">
+                  <TableView fx:id="myChats" prefHeight="300.0" prefWidth="600.0">
                     <columns>
-                      <TableColumn prefWidth="467.19996947050095" text="Name of Group" />
-                      <TableColumn minWidth="0.0" prefWidth="131.99996948242188" text="Users on the chat" />
+                      <TableColumn fx:id="name" prefWidth="467.19996947050095" text="Name of Group" />
+                      <TableColumn fx:id="online" minWidth="0.0" prefWidth="131.99996948242188" text="Users on the chat" />
                     </columns>
                   </TableView>
                </children></AnchorPane>
