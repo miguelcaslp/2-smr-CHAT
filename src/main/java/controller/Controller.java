@@ -4,6 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javafx.scene.control.Alert;
+import model.Chat;
+import model.User;
 
 public class Controller {
 	
@@ -27,6 +29,16 @@ public class Controller {
 		Alert alert = new Alert(Alert.AlertType.INFORMATION);
 		alert.setHeaderText(header);
 		alert.show();
+	}
+	
+	public static void setNick(User nick) {
+		User useraux = new User();
+		useraux = nick;
+	}
+	
+	public static void setChat(Chat name) {
+		Chat chataux = new Chat(null);
+		chataux = name;
 	}
 
 }

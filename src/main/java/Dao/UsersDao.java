@@ -21,7 +21,7 @@ public class UsersDao implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	private HashSet<User> users;
-	private final String URL="C:\\Users\\Miguel\\Documents\\add\\chat\\Users\\usuarios.xml";
+	private final String URL="C:\\Users\\jmcgo\\Desktop\\Eclipse\\2-smr-CHAT\\Users\\usuarios.xml";
 	
 	/**
 	 * Introduce usuarios 
