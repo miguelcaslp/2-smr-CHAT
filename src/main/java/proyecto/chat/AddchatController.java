@@ -12,25 +12,18 @@ import model.User;
 public class AddchatController {
 	
 	@FXML
-	private TextField nick;
+	private TextField namechat;
 	@FXML
-	private Button login;
+	private Button create;
 
     @FXML
     private void switchToNext() throws IOException {
-        App.setRoot("chats");
+        App.setRoot("Messages");
     }
     
     @FXML
-    public void validNick() throws IOException {
-    	String name= nick.getText();
-    	boolean valid = Controller.validNick(name);
-    	if(valid) {
-    		UsersDao us=new UsersDao();
-    		us.addUser(new User(name));
-    		switchToNext();
-    	}
-
+    public void validName() throws IOException {
+    	String name= namechat.getText();
     	
     }
     

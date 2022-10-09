@@ -5,6 +5,7 @@ module proytecto.chat {
     requires java.xml.bind;
     requires jcifs;
     requires javafx.graphics;
+    requires java.desktop;
     
 
     opens proyecto.chat to javafx.fxml, java.xml,jaxb.core,java.xml.bind;

@@ -5,12 +5,16 @@ import java.io.IOException;
 import Dao.UsersDao;
 import controller.Controller;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import model.User;
 
 public class LoginController {
-	
+	@FXML
 	private TextField nick;
+	
+	@FXML
+	private Button login;
 
     @FXML
     private void switchToNext() throws IOException {
