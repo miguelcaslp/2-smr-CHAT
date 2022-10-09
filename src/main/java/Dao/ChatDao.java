@@ -8,7 +8,7 @@ public class ChatDao {
 	
 	public ArrayList<String> listaChats(){
 		ArrayList<String> chats = new ArrayList<String>();
-		File carpeta = new File("C:\\Users\\Miguel\\Documents\\add\\chat\\Chats");
+		File carpeta = new File("C:\\Users\\jmcgo\\Desktop\\Eclipse\\2-smr-CHAT\\Chats");
 		for (final File ficheroEntrada : carpeta.listFiles()) {
 		   chats.add(ficheroEntrada.getName());    
 		}

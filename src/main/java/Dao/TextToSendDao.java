@@ -20,7 +20,7 @@ public class TextToSendDao implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private ArrayList<TextToSend> chats;
-	private final String URL="C:\\Users\\Miguel\\Documents\\add\\chat\\Chats\\";
+	private final String URL="C:\\Users\\jmcgo\\Desktop\\Eclipse\\2-smr-CHAT\\Chats";
 	
 	
 	
