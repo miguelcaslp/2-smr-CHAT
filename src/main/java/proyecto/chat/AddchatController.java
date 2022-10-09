@@ -31,6 +31,4 @@ public class AddchatController {
     	Chat chat = new Chat(name);
     	Controller.setChat(chat);
     }
-    
-    
 }
