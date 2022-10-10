@@ -29,6 +29,7 @@ public class LoginController {
     		UsersDao us=new UsersDao();
     		name= nick.getText().toLowerCase();
     		if(us.addUser(new User(name))) {
+    			Controller.setUser(new User(name));
     			switchToNext();
     		}else {
     			Controller.error("Nick ya en uso", "El nick que has puesto"
@@ -39,8 +40,5 @@ public class LoginController {
 					+ " no es valido, introduce un nuevo nombre.");
 
     	}
-
-    	
     }
-     
 }

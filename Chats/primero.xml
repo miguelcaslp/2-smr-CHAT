@@ -3,6 +3,8 @@
     <chats>
         <user>
             <id>Manolo</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:44.767424400</time>
         </user>
         <text>hola mundo</text>
         <time>10:25 10/07</time>
@@ -10,6 +12,8 @@
     <chats>
         <user>
             <id>Abel</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:44.768423100</time>
         </user>
         <text>hola mundo</text>
         <time>10:25 10/07</time>
@@ -17,9 +21,199 @@
     <chats>
         <user>
             <id>Carla</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:44.768423100</time>
         </user>
         <text>hola mundo</text>
         <time>10:25 10/07</time>
     </chats>
-    <URL>C:\Users\Miguel\Documents\add\chat\Chats\</URL>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:41 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:41 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>undine</id>
+            <idChat></idChat>
+            <time>2022-10-10T19:41:34.677275300</time>
+        </user>
+        <text>espania</text>
+        <time>19:42 10/10</time>
+    </chats>
+    <chats>
+        <user>
+            <id>sans</id>
+            <time>2022-10-10T19:43:07.881716100</time>
+        </user>
+        <text>xdddd</text>
+        <time>19:43 10/10</time>
+    </chats>
+    <URL>C:\Users\jmcgo\Desktop\Eclipse\2-smr-CHAT\Chats\</URL>
 </Mensajes>

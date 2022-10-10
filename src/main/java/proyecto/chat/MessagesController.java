@@ -1,6 +1,7 @@
 package proyecto.chat;
 
 
+import java.awt.Label;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class MessagesController implements Initializable {
 	private TextToSendDao td = new TextToSendDao();
 	
 	@FXML
-	private TableView<TextToSend> pedido ;
+	private TableView<TextToSend> myMessages ;
 	@FXML
 	private TableColumn<TextToSend, String> nick;
 	@FXML
@@ -41,6 +42,7 @@ public class MessagesController implements Initializable {
 	Button send;
 	@FXML
 	TextField text;
+
 	
 	@FXML
     private void switchToBack() throws IOException {
@@ -49,7 +51,7 @@ public class MessagesController implements Initializable {
 	
 	@FXML
 	private void updateTable() {
-		ArrayList<TextToSend>messages= td.loadFile(Controller.getChat().getId());
+		ArrayList<TextToSend>messages= td.loadMessages(Controller.getChat().getId());
 		ObservableList<TextToSend> oList = FXCollections.observableArrayList(messages);
 		
 		
@@ -71,7 +73,7 @@ public class MessagesController implements Initializable {
 			return a;
 		});
 		
-		pedido.getItems().addAll(oList);
+		myMessages.getItems().addAll(oList);
 	}
 	
 	@FXML 
@@ -79,6 +81,7 @@ public class MessagesController implements Initializable {
 		if(Controller.validMessage(text.getText())) {
 			TextToSend MessageToSend = new TextToSend(Controller.getUser(),text.getText());
 			td.addTexttoSend(MessageToSend, Controller.getChat().getId());
+			updateTable();
 		}
 	}
 
@@ -87,10 +90,5 @@ public class MessagesController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		updateTable();
 		
-	}
-    
- 
-    
-    
-    
+	} 
 }

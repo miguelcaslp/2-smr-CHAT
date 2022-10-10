@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import  controller.*;
 
 import java.io.IOException;
 
@@ -18,6 +19,10 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("login"), 640, 480);
+        Thread u = new userUpdateController();
+		u.start();
+		Thread t = new UsersRemoveController();
+		t.start();
         stage.setScene(scene);
         stage.show();
     }
