@@ -7,7 +7,7 @@ public class UsersRemoveController extends Thread {
 	public void run () {
 		while(2>1) {
 			try {
-				Thread.sleep(60000);
+				Thread.sleep(20000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

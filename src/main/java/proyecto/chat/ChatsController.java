@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
 import javax.swing.JOptionPane;
 
 import Dao.ChatDao;
+import Dao.UsersDao;
 import controller.Controller;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -18,6 +19,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import model.Chat;
+import model.User;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.beans.property.ObjectProperty;
@@ -26,6 +28,7 @@ import javafx.beans.property.ObjectProperty;
 
 public class ChatsController implements Initializable {
 	private ChatDao ch = new ChatDao();
+	private UsersDao udao = new UsersDao();
 	
 	@FXML
 	private TableView<Chat> myChats;
@@ -51,6 +54,8 @@ public class ChatsController implements Initializable {
     		JOptionPane.showMessageDialog(null, "Debes seleccionar un chat primero");
     	} else {
     		Controller.setChat(chatname);
+    		udao.removeUser(Controller.getUser());
+    		udao.addUser(new User(Controller.getUser().getId(),Controller.getChat().getId()));
     		App.setRoot("Messages");
     	}
     }

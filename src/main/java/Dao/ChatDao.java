@@ -54,7 +54,7 @@ public class ChatDao {
 	public boolean createChat(String name) {
 		boolean valid=false;
 		try {
-		    String ruta = "C:\\folders\\" + name + ".xml";
+		    String ruta = "C:\\Users\\jmcgo\\Desktop\\Eclipse\\2-smr-CHAT\\Chats\\" + name + ".xml";
 		    File file = new File(ruta);
 		    // Si el archivo no existe es creado
 		        if (!file.exists()) {

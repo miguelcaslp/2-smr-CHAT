@@ -8,7 +8,7 @@ public class userUpdateController extends Thread {
 	public void run () {
 		while(2>1) {
 			try {
-				Thread.sleep(20000);
+				Thread.sleep(10000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
