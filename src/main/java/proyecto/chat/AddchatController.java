@@ -30,5 +30,7 @@ public class AddchatController {
     	newChat.createChat(name);
     	Chat chat = new Chat(name,0);
     	Controller.setChat(chat);
+    	switchToNext();
+    	
     }
 }

@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 
 import Dao.TextToSendDao;
 import controller.Controller;
+import controller.userUpdateController;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -25,6 +26,7 @@ import model.*;
 
 public class MessagesController implements Initializable {
 	private TextToSendDao td = new TextToSendDao();
+			
 	
 	@FXML
 	private TableView<TextToSend> myMessages ;
@@ -50,10 +52,12 @@ public class MessagesController implements Initializable {
     }
 	
 	@FXML
-	private void updateTable() {
+	public void updateTable() {
 		ArrayList<TextToSend>messages= td.loadMessages(Controller.getChat().getId());
-		ObservableList<TextToSend> oList = FXCollections.observableArrayList(messages);
-		
+		if(messages!=null) {
+			ObservableList<TextToSend> oList = FXCollections.observableArrayList(messages);
+			myMessages.getItems().addAll(oList);
+		}
 		
 		nick.setCellValueFactory(InfoPedido -> {
 			SimpleStringProperty a = new SimpleStringProperty();
@@ -73,7 +77,7 @@ public class MessagesController implements Initializable {
 			return a;
 		});
 		
-		myMessages.getItems().addAll(oList);
+		
 	}
 	
 	@FXML 
@@ -84,11 +88,12 @@ public class MessagesController implements Initializable {
 			updateTable();
 		}
 	}
-
-
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		updateTable();
 		
 	} 
+	
+	
 }

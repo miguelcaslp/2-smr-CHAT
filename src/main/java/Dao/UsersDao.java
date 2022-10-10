@@ -75,7 +75,6 @@ public class UsersDao implements Serializable {
 			
 			for(User s: users) {
 				if(s.equals(user)) {
-					System.out.println("Hola");
 					removeUser(s);
 					addUser(new User(s.getId(),s.getIdChat()));
 					
@@ -83,11 +82,7 @@ public class UsersDao implements Serializable {
 					
 				}
 			}
-			
-			
-			
 		}
-		
 	}
 	
 	public void rmUsersForTime() {
@@ -178,9 +173,5 @@ public class UsersDao implements Serializable {
 	public String toString() {
 		return "Usuarios= " + users ;
 	}
-	
-	
-	
-	
 
 }
