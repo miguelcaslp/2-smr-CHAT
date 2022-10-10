@@ -6,8 +6,12 @@ import Dao.UsersDao;
 import model.User;
 
 public class exe {
+	
 	public static void main(String[] args) {
-		System.out.println(controller.Controller.validNick("Mdddd"));
+		User u = new User("Manolitoo");
+		User u2 = new User("Caaaarlos");
+		System.out.println(u.equals(u2));
+		//System.out.println(controller.Controller.validNick("Mdddd"));
 		
 	}
 	 

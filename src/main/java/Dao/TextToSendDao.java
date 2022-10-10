@@ -20,7 +20,7 @@ public class TextToSendDao implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private ArrayList<TextToSend> chats;
-	private final String URL="C:\\Users\\jmcgo\\Desktop\\Eclipse\\2-smr-CHAT\\Chats";
+	private final String URL="C:\\Users\\jmcgo\\Desktop\\Eclipse\\2-smr-CHAT\\Chats\\";
 	
 	
 	
@@ -70,6 +70,11 @@ public class TextToSendDao implements Serializable {
 			e.printStackTrace();
 		}
 		return chats;
+	}
+	
+	public ArrayList<TextToSend> loadMessages(String url) {
+		url = URL+url+".xml";
+		return loadFile(url);
 	}
 
 	@Override

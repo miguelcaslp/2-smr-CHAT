@@ -28,7 +28,7 @@ public class AddchatController {
     public void validName() throws IOException {
     	String name = namechat.getText();
     	newChat.createChat(name);
-    	Chat chat = new Chat(name);
+    	Chat chat = new Chat(name,0);
     	Controller.setChat(chat);
     }
 }

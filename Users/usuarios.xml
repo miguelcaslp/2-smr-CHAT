@@ -1,53 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Usuarios>
     <users>
-        <id>juanmamama</id>
-        <time>2022-10-09T18:24:09.377308200</time>
-    </users>
-    <users>
-        <id>Manuel</id>
+        <id>jajajaumi</id>
         <idChat></idChat>
-        <time>2022-10-08T16:54:24.018189700</time>
-    </users>
-    <users>
-        <id>manuel</id>
-        <idChat></idChat>
-        <time>2022-10-08T16:55:32.104826900</time>
-    </users>
-    <users>
-        <id>cfgm</id>
-        <idChat></idChat>
-        <time>2022-10-09T17:45:18.107691800</time>
-    </users>
-    <users>
-        <id>juanma</id>
-        <idChat></idChat>
-        <time>2022-10-09T17:45:32.106788100</time>
-    </users>
-    <users>
-        <id>juanma2</id>
-        <idChat></idChat>
-        <time>2022-10-09T17:45:49.628459900</time>
-    </users>
-    <users>
-        <id>manolo</id>
-        <idChat>primero</idChat>
-        <time>2022-10-07T20:01:26.029778400</time>
-    </users>
-    <users>
-        <id>juanma2213</id>
-        <idChat></idChat>
-        <time>2022-10-09T18:21:43.914080800</time>
-    </users>
-    <users>
-        <id>juana</id>
-        <idChat></idChat>
-        <time>2022-10-09T17:45:00.675756700</time>
-    </users>
-    <users>
-        <id>carleto</id>
-        <idChat></idChat>
-        <time>2022-10-07T20:00:46.306880400</time>
+        <time>2022-10-10T19:55:07.782771300</time>
     </users>
     <URL>C:\Users\jmcgo\Desktop\Eclipse\2-smr-CHAT\Users\usuarios.xml</URL>
 </Usuarios>
