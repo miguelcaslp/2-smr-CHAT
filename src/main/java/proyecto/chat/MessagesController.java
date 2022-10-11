@@ -85,6 +85,7 @@ public class MessagesController implements Initializable {
 		if(Controller.validMessage(text.getText())) {
 			TextToSend MessageToSend = new TextToSend(Controller.getUser(),text.getText());
 			td.addTexttoSend(MessageToSend, Controller.getChat().getId());
+			myMessages.getItems().clear();
 			updateTable();
 		}
 	}

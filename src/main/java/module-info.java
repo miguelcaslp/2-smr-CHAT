@@ -12,7 +12,7 @@ module proytecto.chat {
     opens Dao to javafx.fxml, java.xml,jaxb.core,java.xml.bind;
     opens model;
     
-    opens prueba to jcifs;
+    
     
     exports model;
     exports proyecto.chat;
