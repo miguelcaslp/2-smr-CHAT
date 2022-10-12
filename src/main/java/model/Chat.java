@@ -41,9 +41,10 @@ public class Chat {
 	public boolean equals(Object obj) {
 		Chat aux = (Chat) obj;
 		if (this.id.equals(aux.id)) {
-
+			return true;
+		} else {
+			return false;
 		}
-		return super.equals(obj);
 	}
 
 }

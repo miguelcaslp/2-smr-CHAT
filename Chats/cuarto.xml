@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mensajes>
+    <chats>
+        <user>
+            <id>prueba</id>
+            <idChat></idChat>
+            <time>2022-10-11T09:58:41.230870100</time>
+        </user>
+        <text>holaaa</text>
+        <time>10:00 10/11</time>
+    </chats>
+    <chats>
+        <user>
+            <id>manolito</id>
+            <idChat></idChat>
+            <time>2022-10-11T10:31:50.079773800</time>
+        </user>
+        <text>carlos</text>
+        <time>10:34 10/11</time>
+    </chats>
+    <chats>
+        <user>
+            <id>manolito</id>
+            <idChat></idChat>
+            <time>2022-10-11T10:31:50.079773800</time>
+        </user>
+        <text>cmi</text>
+        <time>10:34 10/11</time>
+    </chats>
+    <chats>
+        <user>
+            <id>umus</id>
+            <time>2022-10-11T10:38:10.163906900</time>
+        </user>
+        <text>alooo</text>
+        <time>10:38 10/11</time>
+    </chats>
+    <URL>C:\Users\jmcgo\Desktop\Eclipse\2-smr-CHAT\Chats\</URL>
+</Mensajes>
