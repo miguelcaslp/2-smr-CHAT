@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import Dao.TextToSendDao;
+import Dao.UsersDao;
 import controller.Controller;
 import controller.userUpdateController;
 import javafx.beans.property.SimpleStringProperty;
@@ -26,6 +27,7 @@ import model.*;
 
 public class MessagesController implements Initializable {
 	private TextToSendDao td = new TextToSendDao();
+	private UsersDao udao = new UsersDao();
 			
 	
 	@FXML
@@ -48,6 +50,9 @@ public class MessagesController implements Initializable {
 	
 	@FXML
     private void switchToBack() throws IOException {
+        Controller.setChat(null);
+        udao.removeUser(Controller.getUser());
+        udao.addUser(new User(Controller.getUser().getId(),null));
         App.setRoot("chats");
     }
 	

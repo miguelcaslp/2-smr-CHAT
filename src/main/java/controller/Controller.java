@@ -36,11 +36,11 @@ public class Controller {
 	}
 	
 	public static boolean validMessage(String message) {
-		String regex = "^\\w{1,}$";
-		Pattern p = Pattern.compile(regex);
-		Matcher m = p.matcher(message);
-		
-		return m.matches();
+		if(message.length()>=1) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 	
 	
