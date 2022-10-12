@@ -138,10 +138,19 @@
     <chats>
         <user>
             <id>umus</id>
+            <idChat></idChat>
             <time>2022-10-11T10:38:10.163906900</time>
         </user>
         <text>jajaja</text>
         <time>10:38 10/11</time>
+    </chats>
+    <chats>
+        <user>
+            <id>guzman</id>
+            <time>2022-10-12T18:52:13.332872700</time>
+        </user>
+        <text>hola que ta mu wena tarde aqui wuanillo kokunero</text>
+        <time>18:52 10/12</time>
     </chats>
     <URL>C:\Users\jmcgo\Desktop\Eclipse\2-smr-CHAT\Chats\</URL>
 </Mensajes>
